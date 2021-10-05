@@ -10,6 +10,38 @@
     <title>Furniture Store</title>
 </head>
 <body>
+
+    <!-- modal box -->
+    <input type="checkbox" id="show-hide-forms" />
+    <div class="forms-wrapper">
+        <label class="x-btn" for="show-hide-forms">&#10005;</label>
+        <input type="checkbox" id="form-show">
+        <div class="show-btns-wrapper">
+            <label for="form-show" class="show-form-btn show-signup-form">Sign Up</label>
+            <label for="form-show" class="show-form-btn show-login-form">Login</label>
+        </div>
+
+        <form class="signup-form">
+            <h3 class="form-heading">Sign Up</h3>
+            <div class="fullname-inputs-wrapper">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="text" class="form-input" placeholder="Username">
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" class="form-btn" value="Sign Up" >
+        </form>
+
+        <form class="login-form">
+            <h3 class="form-heading">Login</h3>
+            <input type="email" class="form-input" placeholder="Email Address">
+            <input type="password" class="form-input" placeholder="Password">
+            <input type="submit" class="form-btn" value="Login" >
+        </form>
+    </div>
+    <!-- end of modal box -->
+
     <div class="container">
         <!-- navbar -->
         <ul class="social-icons">
@@ -38,7 +70,9 @@
         <nav class="first-nav">
             <ul class="first-nav-list">
                 <li class="first-nav-item">
-                    <a href="#" class="first-nav-link"><i class="fas fa-sign-in-alt"></i>Sign Up / Log In</a>
+                    <a href="#" class="first-nav-link">
+                        <label for="show-hide-forms"><i class="fas fa-sign-in-alt"></i>Sign Up / Log In</label>
+                    </a>
                 </li>
                 <li class="first-nav-item">
                     <a href="#" class="first-nav-link"><i class="fas fa-shopping-cart"></i>Cart(<span>2 items</span>)</a>
